@@ -1,6 +1,7 @@
 import React from 'react';
 import { Heading, Box } from 'rebass';
-import { Link } from "gatsby"
+import styled from 'styled-components';
+import { Link } from "gatsby";
 import Layout from '../components/Layout';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
@@ -30,7 +31,7 @@ const Background = () => (
   </div>
 );
 const StyledLink = styled(Link)`
-  color: aqua;
+  color:  ${props => props.theme.colors.primaryDark};;
 `;
 
 
