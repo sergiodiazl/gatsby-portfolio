@@ -48,7 +48,7 @@ const SuccessFormPage = () => (
         </Heading>
         <Heading color="secondary" fontSize={['2rem', '3rem', '4rem']} as="h2">
         I will try to reply soon!
-        <StyledLink to="/" >You can wait in the main page.</StyledLink>
+        <StyledLink to="/" > You can wait in the main page.</StyledLink>
         </Heading>
       </Box>
     </Section.Container>

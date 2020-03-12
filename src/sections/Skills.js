@@ -106,7 +106,7 @@ Skill.propTypes = {
 
 const Skills = () => (
   <Section.Container id="Skills" Background={Background}>
-    <Section.Header name="Skills and tools" icon="💻" label="brain" />
+    <Section.Header name="Skills and tools" icon="🛠️" label="tools" />
     <StaticQuery
       query={graphql`
         query SkillsQuery {

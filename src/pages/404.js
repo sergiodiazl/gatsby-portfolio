@@ -46,8 +46,8 @@ const NotFoundPage = () => (
           404
         </Heading>
         <Heading color="secondary" fontSize={['2rem', '3rem', '4rem']} as="h2">
-          There isn&apos;t anything here so
-          <StyledLink to="/">Go back !</StyledLink>
+          There isn&apos;t anything here so 
+          <StyledLink to="/"> Go back !</StyledLink>
         </Heading>
       </Box>
     </Section.Container>
