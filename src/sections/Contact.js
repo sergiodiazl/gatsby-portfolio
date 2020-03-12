@@ -100,7 +100,7 @@ padding:5%;
 const ContactForm=()=>(
     <Flex>
       <Box flex ="1 1 auto" >
-     <form name="Contact Form" method="POST" data-netlify="true">
+     <form name="Contact Form" action="success-form" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="Contact Form" />
       <Box  m={2} >
       <Flex flexDirection="column" flexWrap='wrap'>
