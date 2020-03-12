@@ -6,22 +6,22 @@ import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faDatabase,faNetworkWired } from '@fortawesome/free-solid-svg-icons'
+
+import {  faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import Triangle from '../components/Triangle';
 import { CardContainer, Card } from '../components/Card';
-library.add(fab,faDatabase,faNetworkWired)
+library.add(faEnvelope)
 const Background = () => (
   <div>
      <Triangle
-      color="backgroundDark"
+      color="secondaryLight"
       height={['15vh', '10vh']}
       width={['100vw', '100vw']}
-      invertX
+      
     />
 
     <Triangle
-      color="secondary"
+      color="backgroundDark"
       height={['50vh', '40vh']}
       width={['70vw', '40vw']}
       invertY
@@ -45,6 +45,7 @@ const Input = styled.input`
   background: ${props =>props.theme.colors[props.background] || props.theme.colors.backgroundDark};} 
   border: none;
   border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 `;
 const Label = styled.label`
 
@@ -65,17 +66,22 @@ padding: 2%;
   border-radius: 3px;
   resize:none;
   overflow:auto;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 `;
 
 const SubmitButton=styled.button`
 padding: 0.5em;
 margin: 0.5em;
-min-heigth:30vh;
+
 color: ${props =>props.theme.colors[props.color] || props.theme.colors.primary};}
 background-color: ${props =>props.theme.colors[props.color] || props.theme.colors.primaryDark};} 
 border: none;
 border-radius: 3px;
-resize:none;
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+&:hover {
+  
+  box-shadow: 0 40x 4px rgba(0, 0, 0, 0.2);
+}
 `;
 
 
@@ -105,7 +111,7 @@ const ContactForm=()=>(
         <Input id="email" type="email" name="email"/>
         </Flex>  
         </Box>
-        <Box  m={3} >
+        <Box  m={2} >
         <Flex flexDirection="column" alignItems='flex-start' justifyContent='flex-start'>
         <Label htmlFor="name">Your Name:</Label>
         <Input id="name" type="name" name="name" />
@@ -121,7 +127,7 @@ const ContactForm=()=>(
         <Textarea id="message" name="message" />
       </Flex>
        </Box>
-      <SubmitButton type="submit">Send</SubmitButton>
+      <SubmitButton type="submit">Send <FontAwesomeIcon icon="envelope" /></SubmitButton>
     </form>
   </Box>
     </Flex>

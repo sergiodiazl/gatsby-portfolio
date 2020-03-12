@@ -12,8 +12,9 @@ const capitalize = s => s && s[0].toUpperCase() + s.slice(1);
 const HeaderContainer = styled(Headroom)`
 
   .headroom--pinned {
+  
     background: ${props => props.theme.colors.primaryDark};
-    width:100vw;
+   
   }
  
   position: absolute;
@@ -53,6 +54,7 @@ const Header = () => (
             const homeLink = home && (
               <Image
                 src={Logo}
+                p={[0,1,3]}
                 width="10%"
                 alt="Portfolio Logo"
                 onClick={home.onClick}

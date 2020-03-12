@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     box-sizing: border-box; 
     margin: 0;
-   
+    min-width:355px;
     font-family: Cabin, 'Open Sans', sans-serif;
     font-display: swap;
     font-display: fallback;
