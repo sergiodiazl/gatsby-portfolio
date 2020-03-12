@@ -108,13 +108,13 @@ const ContactForm=()=>(
       <Box  m={2} >
         <Flex flexDirection="column"alignItems='flex-start' justifyContent='flex-start'>
         <Label htmlFor="email">Your Email:</Label>
-        <Input id="email" type="email" name="email"/>
+        <Input id="email" type="email" name="email" required/>
         </Flex>  
         </Box>
         <Box  m={2} >
         <Flex flexDirection="column" alignItems='flex-start' justifyContent='flex-start'>
         <Label htmlFor="name">Your Name:</Label>
-        <Input id="name" type="name" name="name" />
+        <Input id="name" type="name" name="name" required/>
         </Flex>  
        </Box>
         </Flex>
@@ -124,7 +124,7 @@ const ContactForm=()=>(
       <Box m={2} >
       <Flex flexDirection="column" alignItems='stretch' justifyContent='space-evenly'>
         <Label htmlFor="message">Message:</Label>
-        <Textarea id="message" name="message" />
+        <Textarea id="message" name="message" required />
       </Flex>
        </Box>
       <SubmitButton type="submit">Send <FontAwesomeIcon icon="envelope" /></SubmitButton>
