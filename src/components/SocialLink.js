@@ -6,9 +6,9 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faGlobeAmericas,faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons'
 import 'tippy.js/dist/tippy.css'; // eslint-disable-line
-library.add(fab,faGlobeAmericas,faEnvelope)
+library.add(fab,faGlobeAmericas)
 const IconLink = styled(Link)`
   transition: color 0.5s;
   color: ${props =>

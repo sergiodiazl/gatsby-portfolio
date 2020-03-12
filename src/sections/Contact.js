@@ -138,7 +138,7 @@ const ContactForm=()=>(
   
 
 const Contact = () => (
-  <Section.Container id="Contact" Background={Background}>
+  <Section.Container id="contact" Background={Background}>
     <Section.Header name="Leave me a message" icon="💻" label="writing" />
     
         <CardContainer minWidth="70vw">
