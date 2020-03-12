@@ -10,12 +10,14 @@ import Logo from './Logo/Portfolio.svg';
 const capitalize = s => s && s[0].toUpperCase() + s.slice(1);
 
 const HeaderContainer = styled(Headroom)`
+
   .headroom--pinned {
     background: ${props => props.theme.colors.primaryDark};
+    width:100vw;
   }
-
+ 
   position: absolute;
-  width: 100%;
+  width: 100vw;
 `;
 
 const formatLinks = allLinks =>
@@ -51,7 +53,7 @@ const Header = () => (
             const homeLink = home && (
               <Image
                 src={Logo}
-                width="125px"
+                width="10%"
                 alt="Portfolio Logo"
                 onClick={home.onClick}
                 style={{
@@ -71,7 +73,7 @@ const Header = () => (
             return (
               <Fragment>
                 {homeLink}
-                <Flex mr={[0, 3, 5]}>{navLinks}</Flex>
+                <Flex flexWrap="wrap" mr={[0, 3, 5]}>{navLinks}</Flex>
               </Fragment>
             );
           }}

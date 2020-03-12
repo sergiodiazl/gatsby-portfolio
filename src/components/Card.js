@@ -12,7 +12,7 @@ export const CardContainer = styled.div`
   justify-items: center;
 
   @media only screen and (max-width: 400px) {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 `;
 
@@ -27,6 +27,7 @@ export const Card = styled(CardRebass).attrs({
   top: 0;
   height: 100%;
   min-width:15vw;
+  max-width:80vw;
   cursor: ${props => (props.onClick ? 'pointer' : 'default')};
   
   &:hover {

@@ -10,7 +10,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faDatabase,faNetworkWired } from '@fortawesome/free-solid-svg-icons'
 import Triangle from '../components/Triangle';
-import { CardContainer, Card } from '../components/Card';
+import {  Card } from '../components/Card';
 library.add(fab,faDatabase,faNetworkWired)
 const Background = () => (
   <div>

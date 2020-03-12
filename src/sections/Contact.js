@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {  Text, Flex,  } from 'rebass';
+import {  Box, Flex,  } from 'rebass';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
@@ -47,22 +47,24 @@ const Input = styled.input`
   border-radius: 3px;
 `;
 const Label = styled.label`
-  padding: 0.5em;
-  margin: 0.5em;
+
+
+ 
   color: ${props =>props.theme.colors[props.color] || props.theme.colors.primary};} 
   border: none;
   border-radius: 3px;
 `;
 const Textarea = styled.textarea`
 flex:1;
-  padding: 0.5em;
-  margin: 0.5em;
+padding: 2%;
+
   min-heigth:30vh;
   color: ${props =>props.theme.colors[props.color] || props.theme.colors.primary};}
   background: ${props =>props.theme.colors[props.color] || props.theme.colors.backgroundDark};} 
   border: none;
   border-radius: 3px;
   resize:none;
+  overflow:auto;
 `;
 
 const SubmitButton=styled.button`
@@ -91,24 +93,37 @@ padding:5%;
 
 const ContactForm=()=>(
     <Flex>
+      <Box flex ="1 1 auto" >
      <form name="Contact Form" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="Contact Form" />
-      <Flex flexWrap='wrap'>
-        <Flex>
+      <Box  m={2} >
+      <Flex flexDirection="column" flexWrap='wrap'>
+      <Flex flexWrap='wrap' alignItems='flex-start' justifyContent='flex-start'>
+      <Box  m={2} >
+        <Flex flexDirection="column"alignItems='flex-start' justifyContent='flex-start'>
         <Label htmlFor="email">Your Email:</Label>
         <Input id="email" type="email" name="email"/>
         </Flex>  
-        <Flex>
+        </Box>
+        <Box  m={3} >
+        <Flex flexDirection="column" alignItems='flex-start' justifyContent='flex-start'>
         <Label htmlFor="name">Your Name:</Label>
         <Input id="name" type="name" name="name" />
         </Flex>  
-      </Flex>
-      <Flex flexWrap='wrap'>
+       </Box>
+        </Flex>
+       
+      </Flex >
+      </Box>
+      <Box m={2} >
+      <Flex flexDirection="column" alignItems='stretch' justifyContent='space-evenly'>
         <Label htmlFor="message">Message:</Label>
         <Textarea id="message" name="message" />
-      </Flex >
+      </Flex>
+       </Box>
       <SubmitButton type="submit">Send</SubmitButton>
     </form>
+  </Box>
     </Flex>
 )
           

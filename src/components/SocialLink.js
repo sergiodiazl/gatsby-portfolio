@@ -28,7 +28,7 @@ const SocialLink = ({ fontAwesomeIcon,iconType, name, url, color }) => (
       color={color}
       rel="noreferrer"
       aria-label={name}
-    >  {console.log(iconType,iconType!=='fas')}
+    >  
        {iconType!=='fas'?<FontAwesomeIcon icon={[iconType,fontAwesomeIcon]} />:<FontAwesomeIcon icon={fontAwesomeIcon }/> }
     </IconLink>
   </Tippy>
