@@ -29,8 +29,12 @@ const Background = () => (
     />
   </div>
 );
+const StyledLink = styled(Link)`
+  color: aqua;
+`;
 
-const NotFoundPage = () => (
+
+const SuccessFormPage = () => (
   <Layout>
     <Section.Container id="404" minHeight="100vh" Background={Background}>
       <Box width={[320, 400, 600]} m="auto">
@@ -39,15 +43,15 @@ const NotFoundPage = () => (
           fontSize={['3rem', '6rem', '8rem']}
           as="h1"
         >
-          404
+          Sent!
         </Heading>
         <Heading color="secondary" fontSize={['2rem', '3rem', '4rem']} as="h2">
-          There isn&apos;t anything here so
-          <Link to="/">Go back !</Link>
+        I will try to reply soon!
+        <StyledLink to="/" >You can wait in the main page.</StyledLink>
         </Heading>
       </Box>
     </Section.Container>
   </Layout>
 );
 
-export default NotFoundPage;
+export default SuccessFormPage;
