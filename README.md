@@ -1,28 +1,21 @@
-# Gatsby Starter: Mate
-
-[![Build Status](https://travis-ci.org/EmaSuriano/gatsby-starter-mate.svg?branch=master)](https://travis-ci.org/EmaSuriano/gatsby-starter-mate)
+# Gatsby Portfolio
 [![eslint](https://img.shields.io/badge/eslint-enabled-green.svg)](https://eslint.org/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Ema-suriano/gatsby-starter-mate)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f532a32d-4fc1-441d-aa28-cdc5e2c2e79c/deploy-status)](https://app.netlify.com/sites/gatsby-starter-mate/deploys)
 
-![Gatsby Starter Mate logo](./media/gatsby-starter-mate-logo.png)
+ An accessible and fast portfolio starter for Gatsby integrated with Contentful CMS.
 
-> An accessible and fast portfolio starter for Gatsby integrated with Contentful CMS.
+You can use it if you want
+### [Check the Demo ✨](https://sergiodl.com/)
 
-The target audience are Developers 💻 and Tech Writers ✍️.
+## Why? 
 
-### [Check the Demo ✨](https://gatsby-starter-mate.netlify.com/)
 
-<a href="https://www.buymeacoffee.com/emasuriano" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-## Why? 🤔
+This Portfolio is totally content based on [Contentful](https://contentful.com), which is a headless CMS where you can write the content for your page. In summary, Contentful is the Model when Gatsby with React is the View.
 
-In case you are looking for a quick setup portfolio or upgrade your current, you have to definitely try Mate!
-
-This starter is totally content based on [Contentful](https://contentful.com), which is a headless CMS where you can write the content for your page. In summary, Contentful is the Model when Gatsby with React is the View.
-
-At the same time, as this portfolio is written with Gatsby is extremely easy to add more than one source of data! For example, the demo comes with an integration of [Medium](https://medium.com) posts based on a user name ✌️
+At the same time, as this portfolio is written with Gatsby is extremely easy to add more than one source of dataThis portfolio is based  on Ema Suriano's portfolio adding and removing certain feature and some css fixes
 
 ## Features 🛠
 
@@ -36,7 +29,7 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
 - Responsive design
 - Icons from [font-awesome](https://fontawesome.com/)
 - [Netlify](https://www.netlify.com) Deployment Friendly
-- Medium integration
+- Contact Form
 - Social sharing (Twitter, Facebook, Google, LinkedIn)
 - Developer tools:
   - `eslint`
@@ -46,9 +39,6 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
   - A11y testing with [Axe](https://www.deque.com/axe/)
   - Visual Testing with [Percy](https://percy.io/)
 
-### Lighthouse Score 💯
-
-![Lighthouse Score](media/lighthouse-score.png)
 
 ## How to start ▶️
 
@@ -140,18 +130,12 @@ $ yarn start
 
 ## Screenshot and Design 🖼
 
-As the starter is a SPA it only has two routes:
+ only has two routes:
 
 - `/`: main page with the sections of `Home`, `About me`, `Projects` and `Writing`.
 - `/404`: error page for unexpected route.
+-`/sucess-form`: confirmation of form sent
 
-| Section  |           Screenshot            |
-| -------- | :-----------------------------: |
-| Home     |     ![Home](media/home.png)     |
-| About me |  ![About me](media/about.png)   |
-| Projects | ![Projects](media/projects.png) |
-| Writing  |  ![Writing](media/writing.png)  |
-| /404     |      ![404](media/404.png)      |
 
 ## Building your site 📦
 
@@ -252,13 +236,7 @@ In case you want to know more I wrote an article in Medium that explains the who
 
 **UPDATE:** Contentful added a feature to link it with Netlify as a built in option, but in case you are using another provider I recommend going with Zapier!
 
-## Contributing 💪
 
-I came with the idea of creating the starter after the positive feedback I received when I deployed [my website](https://emasuriano.com/). Therefore this starter is not perfect! I tried my best to remove all the personal information, also improve the code to make it easier to understand.
-
-I'm totally open for pull requests with bug fixes, changes in Documentation, or new features to the starter 🙌
-
-Please check the [Contribution guidelines](CONTRIBUTING.md) before opening yours 🙏
 
 ## License 📝
 
