@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {  Text, Flex,  } from 'rebass';
+import { Text, Flex } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faDatabase,faNetworkWired } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faNetworkWired } from '@fortawesome/free-solid-svg-icons';
 import Triangle from '../components/Triangle';
-import {  Card } from '../components/Card';
-library.add(fab,faDatabase,faNetworkWired)
+import { Card } from '../components/Card';
+library.add(fab, faDatabase, faNetworkWired);
 const Background = () => (
   <div>
-     <Triangle
+    <Triangle
       color="backgroundDark"
       height={['15vh', '10vh']}
       width={['100vw', '100vw']}
@@ -35,7 +35,6 @@ const Background = () => (
       invertX
       invertY
     />
-    
   </div>
 );
 
@@ -48,7 +47,6 @@ const Title = styled(Text)`
   font-weight: 600;
   text-transform: uppercase;
   display: table;
-  
 `;
 
 const TextContainer = styled.div`
@@ -57,51 +55,45 @@ const TextContainer = styled.div`
   padding: 5px;
   width: 100%;
   width: calc(100% - ${CARD_HEIGHT});
- 
+
   ${MEDIA_QUERY_SMALL} {
     width: calc(100% - (${CARD_HEIGHT} / 2));
   }
 `;
 
-
-
-
-const Skill = ({
-  faIcon,
-  iconType,
-  description,
- 
-  
-}) => (
+const SkillCard = styled(Card)`
+  &:hover {
+    top: 0px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+`;
+const Skill = ({ faIcon, iconType, description }) => (
   <Flex m={2}>
-  <Card>
-    <Flex p={2}  style={{ height: CARD_HEIGHT }}>
-    {iconType!=='fas'?<FontAwesomeIcon icon={[iconType,faIcon]} />:<FontAwesomeIcon icon={faIcon }/> }
-      <TextContainer>
-        
+    <SkillCard>
+      <Flex
+        p={2}
+        style={{ height: CARD_HEIGHT }}
+        justifyContent="flex-start"
+        alignItems="center"
+      >
+        {iconType !== 'fas' ? (
+          <FontAwesomeIcon icon={[iconType, faIcon]} />
+        ) : (
+          <FontAwesomeIcon icon={faIcon} />
+        )}
+        <TextContainer>
           <Title my={2} pb={1}>
-            
             {description}
-
-
-
           </Title>
-          
-        
-               
-      </TextContainer>    
-     
-    </Flex>
-    </Card>
-    </Flex>
+        </TextContainer>
+      </Flex>
+    </SkillCard>
+  </Flex>
 );
 
 Skill.propTypes = {
   faIcon: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  
- 
-  
 };
 
 const Skills = () => (
@@ -117,22 +109,17 @@ const Skills = () => (
               iconType
               description
             }
-          
           }
         }
       `}
-      render={({  allContentfulSkill }) => (
-        
-          <Flex flexWrap="wrap"p={3}> 
-          { allContentfulSkill.nodes.map((p, i) => (
+      render={({ allContentfulSkill }) => (
+        <Flex flexWrap="wrap" p={3}>
+          {allContentfulSkill.nodes.map((p, i) => (
             <Fade bottom delay={i * 100} key={p.id}>
-             
               <Skill {...p} />
-              
             </Fade>
           ))}
-          </Flex>
-        
+        </Flex>
       )}
     />
   </Section.Container>
