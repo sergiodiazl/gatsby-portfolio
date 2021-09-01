@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Triangle from '../components/Triangle';
 import { CardContainer, Card } from '../components/Card';
 library.add(faEnvelope);
 
@@ -62,7 +61,6 @@ box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 &:hover {
   background-color: ${props =>
     props.theme.colors[props.color] || props.theme.colors.primaryDark};} 
-  
   box-shadow: 0 40x 4px rgba(0, 0, 0, 0.2);
 }
 `;
@@ -99,7 +97,7 @@ const ContactForm = () => (
                   alignItems="flex-start"
                   justifyContent="flex-start"
                 >
-                  <Label htmlFor="email">Tu Email:</Label>
+                  <Label htmlFor="email">Your Email</Label>
                   <Input
                     id="email"
                     type="email"
@@ -115,7 +113,7 @@ const ContactForm = () => (
                   alignItems="flex-start"
                   justifyContent="flex-start"
                 >
-                  <Label htmlFor="name">Tu nombre:</Label>
+                  <Label htmlFor="name">Your name :</Label>
                   <Input
                     id="name"
                     type="name"
@@ -134,7 +132,7 @@ const ContactForm = () => (
             alignItems="stretch"
             justifyContent="space-evenly"
           >
-            <Label htmlFor="message">Mensaje:</Label>
+            <Label htmlFor="message">Message:</Label>
             <Textarea
               id="message"
               name="message"
@@ -146,7 +144,7 @@ const ContactForm = () => (
         <Box m={2}>
           <SubmitButton type="submit">
             <Box fontSize={[2, 3, 4]}>
-              Enviar <FontAwesomeIcon icon="envelope" />
+              Send <FontAwesomeIcon icon="envelope" />
             </Box>
           </SubmitButton>
         </Box>
@@ -156,8 +154,8 @@ const ContactForm = () => (
 );
 
 const Contact = () => (
-  <Section.Container id="contacto">
-    <Section.Header name="Dejanos un mensaje" icon="✍️" label="writing" />
+  <Section.Container id="contact">
+    <Section.Header name="Leave a message" icon="✍️" label="writing" />
 
     <CardContainer minWidth="70vw">
       <FormCard>
