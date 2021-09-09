@@ -14,7 +14,7 @@ import Hide from '../components/Hide';
 const Background = () => (
   <div>
     <Triangle
-      color="secondaryLight"
+      color="secondaryDark"
       height={['80vh', '80vh']}
       width={['100vw', '100vw']}
       invertX
@@ -28,7 +28,7 @@ const Background = () => (
     />
 
     <Triangle
-      color="primaryDark"
+      color="primaryLight"
       height={['25vh', '40vh']}
       width={['75vw', '60vw']}
       invertX
@@ -128,7 +128,8 @@ const Project = ({
       <ImageContainer>
         <ProjectImage src={logo.image.src} alt={logo.title} />
         <ProjectTag>
-          <Flex flexWrap='wrap'
+          <Flex
+            flexWrap="wrap"
             style={{
               float: 'right',
             }}
@@ -138,6 +139,7 @@ const Project = ({
                 name="Check repository"
                 fontAwesomeIcon="github"
                 iconType="fab"
+                color="background"
                 url={repositoryUrl}
               />
             </Box>
@@ -146,15 +148,24 @@ const Project = ({
                 name="See project"
                 fontAwesomeIcon="globe-americas"
                 iconType="fas"
+                color="background"
                 url={projectUrl}
               />
             </Box>
           </Flex>
-          <ImageSubtitle bg="primary" color="white" y="bottom" x="right" round>
+          <ImageSubtitle
+            bg="secondaryDark"
+            color="white"
+            y="bottom"
+            x="right"
+            round
+          >
             {type}
           </ImageSubtitle>
           <Hide query={MEDIA_QUERY_SMALL}>
-            <ImageSubtitle bg="backgroundDark">{publishedDate}</ImageSubtitle>
+            <ImageSubtitle bg="backgroundDark" color="white">
+              {publishedDate}
+            </ImageSubtitle>
           </Hide>
         </ProjectTag>
       </ImageContainer>

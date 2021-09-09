@@ -17,10 +17,10 @@ const FooterContainer = styled.div`
 `;
 
 const TextFooter = styled(Text)`
-  color: ${props => props.theme.colors.background};
+  color: ${props => props.theme.colors.primary};
 
   & a {
-    color: ${props => props.theme.colors.background};
+    color: ${props => props.theme.colors.primary};
   }
 `;
 
@@ -68,7 +68,7 @@ const Footer = () => (
               <Fade right>
                 {socialLinks.map(({ id, ...rest }) => (
                   <Box mx={[2, 3]} fontSize={[4, 5]} key={id}>
-                    <SocialLink {...rest} color="background" />
+                    <SocialLink {...rest} color="primary" />
                   </Box>
                 ))}
               </Fade>

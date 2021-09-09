@@ -1,14 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Box, Flex } from 'rebass';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
-import Section from '../components/Section';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
+import Triangle from '../components/Triangle';
+
 library.add(faEnvelope);
 
 const Input = styled.input`
@@ -46,23 +46,20 @@ padding: 2%;
 `;
 
 const SubmitButton = styled.button`
-padding: 0.5em;
-width:100%;
-cursor: pointer;
-
-font-family: Amatic Sc,Cabin, 'Open Sans', sans-serif;
-color: ${props =>
-  props.theme.colors[props.color] || props.theme.colors.primary};}
-background-color: ${props =>
-  props.theme.colors[props.color] || props.theme.colors.primaryLight};} 
-border: none;
-border-radius: 3px;
-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-&:hover {
-  background-color: ${props =>
-    props.theme.colors[props.color] || props.theme.colors.primaryDark};} 
-  box-shadow: 0 40x 4px rgba(0, 0, 0, 0.2);
-}
+  padding: 0.5em;
+  width: 100%;
+  cursor: pointer;
+  font-family: Amatic Sc, Cabin, 'Open Sans', sans-serif;
+  color: ${props => props.theme.colors.background};
+  background-color: ${props => props.theme.colors.primaryLight};
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  &:hover {
+    color: ${props => props.theme.colors.primary};
+    background-color: ${props => props.theme.colors.primaryDark};
+    box-shadow: 0 40x 4px rgba(0, 0, 0, 0.2);
+  }
 `;
 
 const FormCard = styled(Card)`
@@ -91,13 +88,16 @@ const ContactForm = () => (
               alignItems="flex-start"
               justifyContent="flex-start"
             >
-              <Box m={2}>
+              <Box my={2} mr={2}>
                 <Flex
                   flexDirection="column"
                   alignItems="flex-start"
                   justifyContent="flex-start"
+                  mr={2}
                 >
-                  <Label htmlFor="email">Your Email</Label>
+                  <Label htmlFor="email" color="background">
+                    Your Email
+                  </Label>
                   <Input
                     id="email"
                     type="email"
@@ -107,13 +107,15 @@ const ContactForm = () => (
                   />
                 </Flex>
               </Box>
-              <Box m={2}>
+              <Box my={2}>
                 <Flex
                   flexDirection="column"
                   alignItems="flex-start"
                   justifyContent="flex-start"
                 >
-                  <Label htmlFor="name">Your name :</Label>
+                  <Label htmlFor="name" color="background">
+                    Your name :
+                  </Label>
                   <Input
                     id="name"
                     type="name"
@@ -152,9 +154,25 @@ const ContactForm = () => (
     </Box>
   </Flex>
 );
+const Background = () => (
+  <div>
+    <Triangle
+      color="secondary"
+      height={['80vh', '80vh']}
+      width={['100vw', '100vw']}
+      invertX
+    />
 
+    <Triangle
+      color="background"
+      height={['50vh', '20vh']}
+      width={['50vw', '50vw']}
+      invertX
+    />
+  </div>
+);
 const Contact = () => (
-  <Section.Container id="contact">
+  <Section.Container id="contact" Background={Background}>
     <Section.Header name="Leave a message" icon="✍️" label="writing" />
 
     <CardContainer minWidth="70vw">

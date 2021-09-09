@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
  
 
   body {
+    background-color: #000000;
     box-sizing: border-box; 
     margin: 0;
     min-width:355px;
@@ -38,7 +39,7 @@ const Layout = ({ children }) => {
   return (
     <main>
       <GlobalStyle />
-      <ThemeProvider theme={theme }>
+      <ThemeProvider theme={theme}>
         <ScrollingProvider>
           <Helmet />
           {children}

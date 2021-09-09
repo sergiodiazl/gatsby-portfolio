@@ -7,11 +7,13 @@ import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import markdownRenderer from '../components/MarkdownRenderer';
+import WorkExperience from './experience/WorkExperience';
+import Education from './experience/Education';
 
 const Background = () => (
   <div>
     <Triangle
-      color="secondaryLight"
+      color="secondaryDark"
       height={['50vh', '20vh']}
       width={['50vw', '50vw']}
       invertY
@@ -92,6 +94,8 @@ const About = () => (
         );
       }}
     />
+    <WorkExperience />
+    <Education />
   </Section.Container>
 );
 

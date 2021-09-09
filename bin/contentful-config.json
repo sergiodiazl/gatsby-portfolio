@@ -11,8 +11,8 @@
         },
         "id": "project",
         "type": "ContentType",
-        "createdAt": "2018-09-07T23:18:52.188Z",
-        "updatedAt": "2018-09-07T23:18:56.446Z",
+        "createdAt": "2020-03-08T16:44:03.594Z",
+        "updatedAt": "2021-09-08T18:55:52.260Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -20,32 +20,32 @@
             "linkType": "Environment"
           }
         },
+        "publishedVersion": 7,
+        "publishedAt": "2021-09-08T18:55:52.260Z",
+        "firstPublishedAt": "2020-03-08T16:44:07.335Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 4,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
-        },
-        "publishedVersion": 1,
-        "firstPublishedAt": "2018-09-07T23:18:56.446Z",
-        "publishedAt": "2018-09-07T23:18:56.446Z"
+        }
       },
       "displayField": "name",
       "name": "Project",
@@ -130,13 +130,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "ntiequ7mc6q6"
+            "id": "wfk1x58ndywn"
           }
         },
         "id": "about",
         "type": "ContentType",
-        "createdAt": "2018-09-07T23:18:52.234Z",
-        "updatedAt": "2018-09-17T12:05:25.813Z",
+        "createdAt": "2020-03-08T16:44:03.604Z",
+        "updatedAt": "2020-03-10T00:58:46.188Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -144,32 +144,32 @@
             "linkType": "Environment"
           }
         },
+        "publishedVersion": 11,
+        "publishedAt": "2020-03-10T00:58:46.188Z",
+        "firstPublishedAt": "2020-03-08T16:44:09.015Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "publishedCounter": 5,
-        "version": 10,
+        "publishedCounter": 6,
+        "version": 12,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
-        },
-        "publishedVersion": 9,
-        "firstPublishedAt": "2018-09-07T23:18:58.249Z",
-        "publishedAt": "2018-09-17T12:05:25.813Z"
+        }
       },
       "displayField": "name",
       "name": "About",
@@ -257,7 +257,7 @@
           "required": false,
           "validations": [],
           "disabled": false,
-          "omitted": false
+          "omitted": true
         },
         {
           "id": "projects",
@@ -277,6 +277,21 @@
             ],
             "linkType": "Entry"
           }
+        },
+        {
+          "id": "skills",
+          "name": "Skills",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [],
+            "linkType": "Entry"
+          }
         }
       ]
     },
@@ -286,13 +301,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "ntiequ7mc6q6"
+            "id": "wfk1x58ndywn"
           }
         },
         "id": "socialLink",
         "type": "ContentType",
-        "createdAt": "2018-09-07T23:18:52.248Z",
-        "updatedAt": "2018-09-17T12:03:26.939Z",
+        "createdAt": "2020-03-08T16:44:03.660Z",
+        "updatedAt": "2020-03-11T01:00:26.265Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -300,18 +315,21 @@
             "linkType": "Environment"
           }
         },
+        "publishedVersion": 3,
+        "publishedAt": "2020-03-11T01:00:26.265Z",
+        "firstPublishedAt": "2020-03-08T16:44:07.853Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "publishedCounter": 2,
@@ -320,12 +338,9 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
-        },
-        "publishedVersion": 3,
-        "firstPublishedAt": "2018-09-07T23:18:57.463Z",
-        "publishedAt": "2018-09-17T12:03:26.939Z"
+        }
       },
       "displayField": "name",
       "name": "Social Link",
@@ -360,10 +375,342 @@
           "validations": [],
           "disabled": false,
           "omitted": false
+        },
+        {
+          "id": "iconType",
+          "name": "Icon type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "skill",
+        "type": "ContentType",
+        "createdAt": "2020-03-09T23:02:26.538Z",
+        "updatedAt": "2020-03-11T01:10:58.577Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-03-11T01:10:58.577Z",
+        "firstPublishedAt": "2020-03-09T23:02:27.264Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        }
+      },
+      "displayField": "description",
+      "name": "Skill",
+      "description": "work related skills",
+      "fields": [
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "faIcon",
+          "name": "fontAwesomeIcon",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "iconType",
+          "name": "Icon type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "experience",
+        "type": "ContentType",
+        "createdAt": "2021-09-04T23:27:29.868Z",
+        "updatedAt": "2021-09-04T23:27:30.808Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2021-09-04T23:27:30.808Z",
+        "firstPublishedAt": "2021-09-04T23:27:30.808Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        }
+      },
+      "displayField": "company",
+      "name": "experience",
+      "description": "job experience despription",
+      "fields": [
+        {
+          "id": "company",
+          "name": "company",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "logo",
+          "name": "logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "yearStart",
+          "name": "year start",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "yearEnd",
+          "name": "year end",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ongoing",
+          "name": "ongoing",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "education",
+        "type": "ContentType",
+        "createdAt": "2021-09-04T23:33:58.315Z",
+        "updatedAt": "2021-09-04T23:33:58.750Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2021-09-04T23:33:58.750Z",
+        "firstPublishedAt": "2021-09-04T23:33:58.750Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Education",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "logo",
+          "name": "logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "yearEnd",
+          "name": "year end",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "yearStart",
+          "name": "year start",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ongoing",
+          "name": "ongoing",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
         }
       ]
     }
   ],
+  "tags": [],
   "editorInterfaces": [
     {
       "sys": {
@@ -371,24 +718,24 @@
         "type": "EditorInterface",
         "space": {
           "sys": {
-            "id": "ntiequ7mc6q6",
+            "id": "wfk1x58ndywn",
             "type": "Link",
             "linkType": "Space"
           }
         },
-        "version": 2,
-        "createdAt": "2018-09-07T23:18:56.627Z",
+        "version": 8,
+        "createdAt": "2020-03-08T16:44:07.420Z",
         "createdBy": {
           "sys": {
-            "id": "2XGcyQ3vKgm55htxMAIqsM",
+            "id": "5CXTyPMzRBDC02whZAkrxn",
             "type": "Link",
             "linkType": "User"
           }
         },
-        "updatedAt": "2018-09-07T23:19:00.619Z",
+        "updatedAt": "2021-09-08T18:55:52.946Z",
         "updatedBy": {
           "sys": {
-            "id": "2XGcyQ3vKgm55htxMAIqsM",
+            "id": "5CXTyPMzRBDC02whZAkrxn",
             "type": "Link",
             "linkType": "User"
           }
@@ -445,24 +792,24 @@
         "type": "EditorInterface",
         "space": {
           "sys": {
-            "id": "ntiequ7mc6q6",
+            "id": "wfk1x58ndywn",
             "type": "Link",
             "linkType": "Space"
           }
         },
-        "version": 10,
-        "createdAt": "2018-09-07T23:18:58.429Z",
+        "version": 12,
+        "createdAt": "2020-03-08T16:44:09.099Z",
         "createdBy": {
           "sys": {
-            "id": "2XGcyQ3vKgm55htxMAIqsM",
+            "id": "5CXTyPMzRBDC02whZAkrxn",
             "type": "Link",
             "linkType": "User"
           }
         },
-        "updatedAt": "2018-09-17T12:05:26.511Z",
+        "updatedAt": "2020-03-10T00:58:48.203Z",
         "updatedBy": {
           "sys": {
-            "id": "2XGcyQ3vKgm55htxMAIqsM",
+            "id": "5CXTyPMzRBDC02whZAkrxn",
             "type": "Link",
             "linkType": "User"
           }
@@ -485,41 +832,57 @@
       "controls": [
         {
           "fieldId": "name",
-          "widgetId": "singleLine"
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
           "fieldId": "description",
-          "widgetId": "singleLine"
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
           "fieldId": "roles",
-          "widgetId": "tagEditor"
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
         },
         {
           "fieldId": "socialLinks",
           "settings": {
             "bulkEditing": false
           },
-          "widgetId": "entryLinksEditor"
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
         },
         {
           "fieldId": "profile",
-          "widgetId": "assetLinkEditor"
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
         },
         {
           "fieldId": "aboutMe",
-          "widgetId": "markdown"
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
         },
         {
           "fieldId": "mediumUser",
-          "widgetId": "singleLine"
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
           "fieldId": "projects",
           "settings": {
             "bulkEditing": false
           },
-          "widgetId": "entryLinksEditor"
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "skills",
+          "settings": {
+            "bulkEditing": false
+          },
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
         }
       ]
     },
@@ -529,24 +892,24 @@
         "type": "EditorInterface",
         "space": {
           "sys": {
-            "id": "ntiequ7mc6q6",
+            "id": "wfk1x58ndywn",
             "type": "Link",
             "linkType": "Space"
           }
         },
         "version": 4,
-        "createdAt": "2018-09-07T23:18:57.615Z",
+        "createdAt": "2020-03-08T16:44:07.957Z",
         "createdBy": {
           "sys": {
-            "id": "2XGcyQ3vKgm55htxMAIqsM",
+            "id": "5CXTyPMzRBDC02whZAkrxn",
             "type": "Link",
             "linkType": "User"
           }
         },
-        "updatedAt": "2018-09-17T12:03:27.550Z",
+        "updatedAt": "2020-03-11T01:00:27.361Z",
         "updatedBy": {
           "sys": {
-            "id": "2XGcyQ3vKgm55htxMAIqsM",
+            "id": "5CXTyPMzRBDC02whZAkrxn",
             "type": "Link",
             "linkType": "User"
           }
@@ -569,33 +932,262 @@
       "controls": [
         {
           "fieldId": "name",
-          "widgetId": "singleLine"
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
           "fieldId": "url",
-          "widgetId": "singleLine"
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
           "fieldId": "fontAwesomeIcon",
-          "widgetId": "singleLine"
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "iconType",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "wfk1x58ndywn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 6,
+        "createdAt": "2020-03-09T23:02:27.353Z",
+        "createdBy": {
+          "sys": {
+            "id": "5CXTyPMzRBDC02whZAkrxn",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-03-11T01:11:01.300Z",
+        "updatedBy": {
+          "sys": {
+            "id": "5CXTyPMzRBDC02whZAkrxn",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "skill",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "faIcon",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "iconType",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "wfk1x58ndywn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2021-09-04T23:27:30.952Z",
+        "createdBy": {
+          "sys": {
+            "id": "5CXTyPMzRBDC02whZAkrxn",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-09-04T23:27:31.974Z",
+        "updatedBy": {
+          "sys": {
+            "id": "5CXTyPMzRBDC02whZAkrxn",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "experience",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "company",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "logo",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "yearStart",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "yearEnd",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ongoing",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "wfk1x58ndywn",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2021-09-04T23:33:58.978Z",
+        "createdBy": {
+          "sys": {
+            "id": "5CXTyPMzRBDC02whZAkrxn",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-09-04T23:34:00.620Z",
+        "updatedBy": {
+          "sys": {
+            "id": "5CXTyPMzRBDC02whZAkrxn",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "education",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "logo",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "yearEnd",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "yearStart",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ongoing",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
         }
       ]
     }
   ],
   "entries": [
     {
+      "metadata": {
+        "tags": []
+      },
       "sys": {
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "ntiequ7mc6q6"
+            "id": "wfk1x58ndywn"
           }
         },
-        "id": "5lzMxuCX84uYqmgGmU8iKU",
+        "id": "3DpgtG8qI8QCWyEAuME4Ku",
         "type": "Entry",
-        "createdAt": "2018-09-08T08:08:42.747Z",
-        "updatedAt": "2018-09-17T12:09:24.193Z",
+        "createdAt": "2020-03-08T16:44:19.748Z",
+        "updatedAt": "2021-09-08T18:56:04.758Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -603,32 +1195,482 @@
             "linkType": "Environment"
           }
         },
+        "publishedVersion": 45,
+        "publishedAt": "2021-09-08T18:56:04.758Z",
+        "firstPublishedAt": "2020-03-08T16:44:23.158Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "publishedCounter": 12,
-        "version": 1186,
+        "publishedCounter": 6,
+        "version": 46,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "publishedVersion": 1185,
-        "firstPublishedAt": "2018-09-08T08:18:29.722Z",
-        "publishedAt": "2018-09-17T12:09:24.193Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Medium"
+        },
+        "url": {
+          "en-US": "https://medium.com/@emasuriano"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "medium"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "2GKNR2f4z6IwAg6a2MmKCc",
+        "type": "Entry",
+        "createdAt": "2020-03-08T16:44:19.765Z",
+        "updatedAt": "2021-09-08T18:56:06.408Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 115,
+        "publishedAt": "2021-09-08T18:56:06.408Z",
+        "firstPublishedAt": "2020-03-08T16:44:24.049Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 116,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Gatsby JS"
+        },
+        "publishedDate": {
+          "en-US": "2016-09-01T00:00+02:00"
+        },
+        "logo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6rkOXCpyvuekYIgy6U6gGu"
+            }
+          }
+        },
+        "repositoryUrl": {
+          "en-US": "https://github.com/gatsbyjs/gatsby"
+        },
+        "description": {
+          "en-US": " Gatsby is a React-based, GraphQL powered, static site generator. Overall think, part Jekyll, part create-react-app."
+        },
+        "projectUrl": {
+          "en-US": "https://www.gatsbyjs.org/"
+        },
+        "type": {
+          "en-US": "Framework"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "6Y7EIx73nUCWuoIWcsuM00",
+        "type": "Entry",
+        "createdAt": "2020-03-08T16:44:19.766Z",
+        "updatedAt": "2021-09-08T18:56:05.104Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 26,
+        "publishedAt": "2021-09-08T18:56:05.104Z",
+        "firstPublishedAt": "2020-03-08T16:44:23.625Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 27,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Facebook"
+        },
+        "publishedDate": {
+          "en-US": "2004-09-01T00:00+02:00"
+        },
+        "logo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "u3Um4zkMrAaQioyq4oSIW"
+            }
+          }
+        },
+        "repositoryUrl": {
+          "en-US": "https://github.com/facebook"
+        },
+        "description": {
+          "en-US": "Facebook is a popular free social networking website that allows registered users to keep in touch with friends."
+        },
+        "projectUrl": {
+          "en-US": "http://facebook.com/"
+        },
+        "type": {
+          "en-US": "Web"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "114ApRkJZq640w8G2GwM8w",
+        "type": "Entry",
+        "createdAt": "2020-03-08T16:44:19.770Z",
+        "updatedAt": "2021-09-08T18:56:04.153Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2021-09-08T18:56:04.153Z",
+        "firstPublishedAt": "2020-03-08T16:44:22.488Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Contact me"
+        },
+        "url": {
+          "en-US": "https://emanuelsuriano.typeform.com/to/OeETl6"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "envelope"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "4SrlLN9bt6Yew2UyGgM06a",
+        "type": "Entry",
+        "createdAt": "2020-03-08T16:44:20.033Z",
+        "updatedAt": "2021-09-08T18:56:03.045Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 21,
+        "publishedAt": "2021-09-08T18:56:03.045Z",
+        "firstPublishedAt": "2020-03-08T16:44:21.002Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 22,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Github"
+        },
+        "url": {
+          "en-US": "https://github.com/EmaSuriano/gatsby-starter-mate/blob/master/README.md"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "github"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "4J6WFTjoMUCmQKuKAaOsqE",
+        "type": "Entry",
+        "createdAt": "2020-03-08T16:44:20.196Z",
+        "updatedAt": "2021-09-08T18:56:03.825Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 45,
+        "publishedAt": "2021-09-08T18:56:03.825Z",
+        "firstPublishedAt": "2020-03-08T16:44:21.955Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 10,
+        "version": 46,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "socialLink"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Twitter"
+        },
+        "url": {
+          "en-US": "https://twitter.com/emasuriano"
+        },
+        "fontAwesomeIcon": {
+          "en-US": "twitter"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "5lzMxuCX84uYqmgGmU8iKU",
+        "type": "Entry",
+        "createdAt": "2020-03-08T16:44:20.574Z",
+        "updatedAt": "2021-09-08T18:56:03.430Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 392,
+        "publishedAt": "2021-09-08T18:56:03.430Z",
+        "firstPublishedAt": "2020-03-08T16:44:21.448Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 20,
+        "version": 393,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
         "contentType": {
           "sys": {
             "type": "Link",
@@ -727,84 +1769,21 @@
       }
     },
     {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ntiequ7mc6q6"
-          }
-        },
-        "id": "4SrlLN9bt6Yew2UyGgM06a",
-        "type": "Entry",
-        "createdAt": "2018-09-08T08:10:31.702Z",
-        "updatedAt": "2018-09-08T08:10:51.574Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 10,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
-          }
-        },
-        "publishedVersion": 9,
-        "firstPublishedAt": "2018-09-08T08:10:51.574Z",
-        "publishedAt": "2018-09-08T08:10:51.574Z",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "socialLink"
-          }
-        }
+      "metadata": {
+        "tags": []
       },
-      "fields": {
-        "name": {
-          "en-US": "Github"
-        },
-        "url": {
-          "en-US": "https://github.com/EmaSuriano/gatsby-starter-mate/blob/master/README.md"
-        },
-        "fontAwesomeIcon": {
-          "en-US": "github"
-        }
-      }
-    },
-    {
       "sys": {
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "ntiequ7mc6q6"
+            "id": "wfk1x58ndywn"
           }
         },
-        "id": "5paxSRHbAkmgMc4WSW8S66",
+        "id": "5A4xPK8qBqGqco2SgfZhcf",
         "type": "Entry",
-        "createdAt": "2018-09-08T08:25:47.955Z",
-        "updatedAt": "2018-09-08T09:40:56.658Z",
+        "createdAt": "2020-03-09T02:27:43.249Z",
+        "updatedAt": "2020-03-12T22:21:19.473Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -812,32 +1791,32 @@
             "linkType": "Environment"
           }
         },
+        "publishedVersion": 65,
+        "publishedAt": "2020-03-12T22:21:19.473Z",
+        "firstPublishedAt": "2020-03-09T02:29:59.294Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "publishedCounter": 2,
-        "version": 51,
+        "version": 66,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "publishedVersion": 50,
-        "firstPublishedAt": "2018-09-08T08:38:15.314Z",
-        "publishedAt": "2018-09-08T09:40:56.657Z",
         "contentType": {
           "sys": {
             "type": "Link",
@@ -848,47 +1827,50 @@
       },
       "fields": {
         "name": {
-          "en-US": "Google"
+          "en-US": "Cripto coin info"
         },
         "publishedDate": {
-          "en-US": "1998-06-19T00:00+02:00"
+          "en-US": "2018-03-09T00:00+03:00"
         },
         "logo": {
           "en-US": {
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "3AorRmtWOsGQ4o8gK0YWKG"
+              "id": "sFhWk9JM2pDF8FSTqmFgM"
             }
           }
         },
         "repositoryUrl": {
-          "en-US": "https://github.com/google"
+          "en-US": "https://github.com/sergiodiazl/react-coin-info"
         },
         "description": {
-          "en-US": "It is the most-used search engine on the World Wide Web, handling more than three billion searches each day."
+          "en-US": "A simple app to get information about cripto currencies (prices,market cap,etc)"
         },
         "projectUrl": {
-          "en-US": "https://www.google.com/"
+          "en-US": "http://react-coin-info.herokuapp.com/"
         },
         "type": {
-          "en-US": "Web"
+          "en-US": "web"
         }
       }
     },
     {
+      "metadata": {
+        "tags": []
+      },
       "sys": {
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "ntiequ7mc6q6"
+            "id": "wfk1x58ndywn"
           }
         },
-        "id": "2GKNR2f4z6IwAg6a2MmKCc",
+        "id": "4mTt0jLu3J97uEY9XWrYU8",
         "type": "Entry",
-        "createdAt": "2018-09-08T09:31:01.989Z",
-        "updatedAt": "2018-09-08T09:43:24.088Z",
+        "createdAt": "2020-03-09T23:06:45.797Z",
+        "updatedAt": "2020-03-11T01:15:02.397Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -896,83 +1878,620 @@
             "linkType": "Environment"
           }
         },
+        "publishedVersion": 12,
+        "publishedAt": "2020-03-11T01:15:02.397Z",
+        "firstPublishedAt": "2020-03-09T23:07:36.082Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "publishedCounter": 2,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "description": {
+          "en-US": "Web development"
+        },
+        "faIcon": {
+          "en-US": "network-wired"
+        },
+        "iconType": {
+          "en-US": "fas"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "4selcttmzIbjHAb56UmhhQ",
+        "type": "Entry",
+        "createdAt": "2020-03-09T23:07:45.568Z",
+        "updatedAt": "2020-03-11T01:15:12.018Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "publishedAt": "2020-03-11T01:15:12.018Z",
+        "firstPublishedAt": "2020-03-09T23:08:19.524Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "description": {
+          "en-US": "JavaScript"
+        },
+        "faIcon": {
+          "en-US": "js-square"
+        },
+        "iconType": {
+          "en-US": "fab"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "6fmt1TD3HusOKrSOyn5FGc",
+        "type": "Entry",
+        "createdAt": "2020-03-09T23:08:27.416Z",
+        "updatedAt": "2020-03-11T01:15:20.449Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "publishedAt": "2020-03-11T01:15:20.449Z",
+        "firstPublishedAt": "2020-03-09T23:08:54.435Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 17,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "description": {
+          "en-US": "React"
+        },
+        "faIcon": {
+          "en-US": "react"
+        },
+        "iconType": {
+          "en-US": "fab"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "2nskYJnT7mo6yEiIpZ2jfn",
+        "type": "Entry",
+        "createdAt": "2020-03-09T23:09:12.805Z",
+        "updatedAt": "2020-03-11T01:15:29.736Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "publishedAt": "2020-03-11T01:15:29.736Z",
+        "firstPublishedAt": "2020-03-09T23:12:28.342Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 17,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "description": {
+          "en-US": "Html"
+        },
+        "faIcon": {
+          "en-US": "html5"
+        },
+        "iconType": {
+          "en-US": "fab"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "1oyUCBZHUpU8XNM3Slmv3a",
+        "type": "Entry",
+        "createdAt": "2020-03-09T23:13:08.878Z",
+        "updatedAt": "2020-03-11T01:16:31.900Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2020-03-11T01:16:31.900Z",
+        "firstPublishedAt": "2020-03-09T23:16:24.125Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "description": {
+          "en-US": "Css"
+        },
+        "faIcon": {
+          "en-US": "css3-alt"
+        },
+        "iconType": {
+          "en-US": "fab"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "IP6vQA0fT5vkftriBE8vX",
+        "type": "Entry",
+        "createdAt": "2020-03-09T23:16:30.355Z",
+        "updatedAt": "2020-03-11T03:08:57.223Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2020-03-11T03:08:57.223Z",
+        "firstPublishedAt": "2020-03-09T23:17:01.959Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "description": {
+          "en-US": "NodeJs"
+        },
+        "faIcon": {
+          "en-US": "node-js"
+        },
+        "iconType": {
+          "en-US": "fab"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "3RrxHjRH9qAlqwGisMlZMt",
+        "type": "Entry",
+        "createdAt": "2020-03-09T23:17:11.204Z",
+        "updatedAt": "2020-03-11T02:33:47.911Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 18,
+        "publishedAt": "2020-03-11T02:33:47.911Z",
+        "firstPublishedAt": "2020-03-09T23:17:42.110Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 19,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "description": {
+          "en-US": "Relational databases"
+        },
+        "faIcon": {
+          "en-US": "database"
+        },
+        "iconType": {
+          "en-US": "fas"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "5Yjbrnv6ahh8VgjRX2RDCA",
+        "type": "Entry",
+        "createdAt": "2020-03-09T23:17:54.072Z",
+        "updatedAt": "2020-03-11T01:18:03.147Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2020-03-11T01:18:03.146Z",
+        "firstPublishedAt": "2020-03-09T23:18:01.888Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "description": {
+          "en-US": "Python"
+        },
+        "faIcon": {
+          "en-US": "python"
+        },
+        "iconType": {
+          "en-US": "fab"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "UJrGIxjXRMFTgnUDMuyET",
+        "type": "Entry",
+        "createdAt": "2020-03-09T23:18:38.922Z",
+        "updatedAt": "2020-03-11T02:34:04.318Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 31,
+        "publishedAt": "2020-03-11T02:34:04.318Z",
+        "firstPublishedAt": "2020-03-09T23:19:10.967Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 4,
         "version": 32,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "publishedVersion": 31,
-        "firstPublishedAt": "2018-09-08T09:34:11.498Z",
-        "publishedAt": "2018-09-08T09:43:24.088Z",
         "contentType": {
           "sys": {
             "type": "Link",
             "linkType": "ContentType",
-            "id": "project"
+            "id": "skill"
           }
         }
       },
       "fields": {
-        "name": {
-          "en-US": "Gatsby JS"
-        },
-        "publishedDate": {
-          "en-US": "2016-09-01T00:00+02:00"
-        },
-        "logo": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "6rkOXCpyvuekYIgy6U6gGu"
-            }
-          }
-        },
-        "repositoryUrl": {
-          "en-US": "https://github.com/gatsbyjs/gatsby"
-        },
         "description": {
-          "en-US": " Gatsby is a React-based, GraphQL powered, static site generator. Overall think, part Jekyll, part create-react-app."
+          "en-US": "Git version control"
         },
-        "projectUrl": {
-          "en-US": "https://www.gatsbyjs.org/"
+        "faIcon": {
+          "en-US": "git-alt"
         },
-        "type": {
-          "en-US": "Framework"
+        "iconType": {
+          "en-US": "fab"
         }
       }
     },
     {
+      "metadata": {
+        "tags": []
+      },
       "sys": {
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "ntiequ7mc6q6"
+            "id": "wfk1x58ndywn"
           }
         },
-        "id": "6Y7EIx73nUCWuoIWcsuM00",
+        "id": "39dSXVWiG0QjfRlP1eUl1B",
         "type": "Entry",
-        "createdAt": "2018-09-08T09:34:51.064Z",
-        "updatedAt": "2018-09-08T09:38:14.627Z",
+        "createdAt": "2020-03-12T22:27:43.869Z",
+        "updatedAt": "2020-03-12T22:31:21.028Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -980,32 +2499,239 @@
             "linkType": "Environment"
           }
         },
+        "publishedVersion": 17,
+        "publishedAt": "2020-03-12T22:31:21.028Z",
+        "firstPublishedAt": "2020-03-12T22:31:21.028Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "publishedCounter": 4,
-        "version": 20,
+        "publishedCounter": 1,
+        "version": 18,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "publishedVersion": 19,
-        "firstPublishedAt": "2018-09-08T09:35:59.528Z",
-        "publishedAt": "2018-09-08T09:38:14.627Z",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "description": {
+          "en-US": "Accesibility"
+        },
+        "faIcon": {
+          "en-US": "accessible-icon"
+        },
+        "iconType": {
+          "en-US": "fab"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "5PG5WDtJoIJ4hNF6kctchA",
+        "type": "Entry",
+        "createdAt": "2020-03-12T22:32:08.990Z",
+        "updatedAt": "2020-03-25T14:00:12.957Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2020-03-25T14:00:12.957Z",
+        "firstPublishedAt": "2020-03-12T22:32:23.727Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "description": {
+          "en-US": "Bootstrap"
+        },
+        "faIcon": {
+          "en-US": "bootstrap"
+        },
+        "iconType": {
+          "en-US": "fab"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "5dDDIlU4399bP236MixLUv",
+        "type": "Entry",
+        "createdAt": "2020-03-12T22:36:26.611Z",
+        "updatedAt": "2020-03-12T22:40:38.468Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 22,
+        "publishedAt": "2020-03-12T22:40:38.468Z",
+        "firstPublishedAt": "2020-03-12T22:36:52.604Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 23,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "description": {
+          "en-US": "Stack overflow"
+        },
+        "faIcon": {
+          "en-US": "stack-overflow"
+        },
+        "iconType": {
+          "en-US": "fab"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "4YniTmvFTMQzIn1RQPPBFv",
+        "type": "Entry",
+        "createdAt": "2020-04-07T14:55:24.491Z",
+        "updatedAt": "2020-04-07T14:59:45.866Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2020-04-07T14:59:45.866Z",
+        "firstPublishedAt": "2020-04-07T14:59:45.866Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
         "contentType": {
           "sys": {
             "type": "Link",
@@ -1016,28 +2742,115 @@
       },
       "fields": {
         "name": {
-          "en-US": "Facebook"
+          "en-US": "Covid19 map"
         },
         "publishedDate": {
-          "en-US": "2004-09-01T00:00+02:00"
+          "en-US": "2020-04-07T00:00+03:00"
         },
         "logo": {
           "en-US": {
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "u3Um4zkMrAaQioyq4oSIW"
+              "id": "21cC1P12Ibhw2o6ltHkZo5"
             }
           }
         },
         "repositoryUrl": {
-          "en-US": "https://github.com/facebook"
+          "en-US": "https://github.com/sergiodiazl/simplecovidmap"
         },
         "description": {
-          "en-US": "Facebook is a popular free social networking website that allows registered users to keep in touch with friends."
+          "en-US": "Map showing information about Corona virus covid 19 cases around the world"
         },
         "projectUrl": {
-          "en-US": "http://facebook.com/"
+          "en-US": "https://covid19simplemap.netlify.com/"
+        },
+        "type": {
+          "en-US": "Map"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "1EBswt6JHKCI8vONdRkfYo",
+        "type": "Entry",
+        "createdAt": "2020-07-03T19:14:08.098Z",
+        "updatedAt": "2020-07-03T19:27:57.822Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2020-07-03T19:27:57.822Z",
+        "firstPublishedAt": "2020-07-03T19:27:57.822Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Ragazzas"
+        },
+        "publishedDate": {
+          "en-US": "2020-06-15T00:00-03:00"
+        },
+        "logo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6svdYdhuMto2rpvjmsKKEH"
+            }
+          }
+        },
+        "repositoryUrl": {
+          "en-US": "https://github.com/sergiodiazl/Ragazzas-starter"
+        },
+        "description": {
+          "en-US": "Website for indie music band. Built with Gatsby,Spotify integration. Maximum Lighthouse audit scores,Pwa ready."
+        },
+        "projectUrl": {
+          "en-US": "https://ragazzas.netlify.app/"
         },
         "type": {
           "en-US": "Web"
@@ -1045,18 +2858,21 @@
       }
     },
     {
+      "metadata": {
+        "tags": []
+      },
       "sys": {
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "ntiequ7mc6q6"
+            "id": "wfk1x58ndywn"
           }
         },
-        "id": "3DpgtG8qI8QCWyEAuME4Ku",
+        "id": "20RQHOZ66pBbJtc5yOXYTw",
         "type": "Entry",
-        "createdAt": "2018-09-17T12:07:45.316Z",
-        "updatedAt": "2018-09-17T12:08:02.358Z",
+        "createdAt": "2020-07-03T19:35:20.371Z",
+        "updatedAt": "2020-07-03T19:35:42.420Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1064,65 +2880,68 @@
             "linkType": "Environment"
           }
         },
+        "publishedVersion": 3,
+        "publishedAt": "2020-07-03T19:35:42.420Z",
+        "firstPublishedAt": "2020-07-03T19:35:42.420Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "publishedCounter": 1,
-        "version": 14,
+        "version": 4,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "publishedVersion": 13,
-        "firstPublishedAt": "2018-09-17T12:08:02.358Z",
-        "publishedAt": "2018-09-17T12:08:02.358Z",
         "contentType": {
           "sys": {
             "type": "Link",
             "linkType": "ContentType",
-            "id": "socialLink"
+            "id": "skill"
           }
         }
       },
       "fields": {
-        "name": {
-          "en-US": "Medium"
+        "description": {
+          "en-US": "Docker"
         },
-        "url": {
-          "en-US": "https://medium.com/@emasuriano"
+        "faIcon": {
+          "en-US": "Docker"
         },
-        "fontAwesomeIcon": {
-          "en-US": "medium"
+        "iconType": {
+          "en-US": "fab"
         }
       }
     },
     {
+      "metadata": {
+        "tags": []
+      },
       "sys": {
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "ntiequ7mc6q6"
+            "id": "wfk1x58ndywn"
           }
         },
-        "id": "114ApRkJZq640w8G2GwM8w",
+        "id": "6QC84XZuCyX0GyDrxoaU3T",
         "type": "Entry",
-        "createdAt": "2018-09-17T12:08:27.655Z",
-        "updatedAt": "2018-09-17T12:08:43.183Z",
+        "createdAt": "2021-09-04T23:37:47.436Z",
+        "updatedAt": "2021-09-08T18:40:16.760Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1130,133 +2949,102 @@
             "linkType": "Environment"
           }
         },
+        "publishedVersion": 20,
+        "publishedAt": "2021-09-08T18:40:16.760Z",
+        "firstPublishedAt": "2021-09-08T18:40:16.760Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "publishedCounter": 1,
-        "version": 5,
+        "version": 21,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "publishedVersion": 4,
-        "firstPublishedAt": "2018-09-17T12:08:43.183Z",
-        "publishedAt": "2018-09-17T12:08:43.183Z",
         "contentType": {
           "sys": {
             "type": "Link",
             "linkType": "ContentType",
-            "id": "socialLink"
+            "id": "education"
           }
         }
       },
       "fields": {
         "name": {
-          "en-US": "Contact me"
+          "en-US": "Universidad Nacional Arturo Jaurteche(Argentina)"
         },
-        "url": {
-          "en-US": "https://emanuelsuriano.typeform.com/to/OeETl6"
-        },
-        "fontAwesomeIcon": {
-          "en-US": "envelope"
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ntiequ7mc6q6"
+        "logo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5AwZV61ZNRkvSrK4yH0cVf"
+            }
           }
         },
-        "id": "4J6WFTjoMUCmQKuKAaOsqE",
-        "type": "Entry",
-        "createdAt": "2018-09-17T12:08:48.454Z",
-        "updatedAt": "2018-09-17T12:08:57.490Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
+        "description": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Bachelor degree in Informatic Engineering with a focus on web development.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              }
+            ]
           }
         },
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
-          }
+        "yearEnd": {
+          "en-US": 2020
         },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
-          }
+        "yearStart": {
+          "en-US": 2013
         },
-        "publishedCounter": 1,
-        "version": 5,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
-          }
-        },
-        "publishedVersion": 4,
-        "firstPublishedAt": "2018-09-17T12:08:57.490Z",
-        "publishedAt": "2018-09-17T12:08:57.490Z",
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "socialLink"
-          }
-        }
-      },
-      "fields": {
-        "name": {
-          "en-US": "Twitter"
-        },
-        "url": {
-          "en-US": "https://twitter.com/emasuriano"
-        },
-        "fontAwesomeIcon": {
-          "en-US": "twitter"
+        "ongoing": {
+          "en-US": false
         }
       }
     }
   ],
   "assets": [
     {
+      "metadata": {
+        "tags": []
+      },
       "sys": {
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "ntiequ7mc6q6"
+            "id": "wfk1x58ndywn"
           }
         },
         "id": "3AorRmtWOsGQ4o8gK0YWKG",
         "type": "Asset",
-        "createdAt": "2018-09-08T08:26:24.437Z",
-        "updatedAt": "2018-09-23T09:26:16.789Z",
+        "createdAt": "2020-03-08T16:44:10.657Z",
+        "updatedAt": "2021-09-08T18:55:59.158Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1264,32 +3052,32 @@
             "linkType": "Environment"
           }
         },
+        "publishedVersion": 63,
+        "publishedAt": "2021-09-08T18:55:59.158Z",
+        "firstPublishedAt": "2020-03-08T16:44:17.934Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "publishedCounter": 2,
-        "version": 27,
+        "publishedCounter": 5,
+        "version": 64,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
-        },
-        "publishedVersion": 26,
-        "firstPublishedAt": "2018-09-08T08:29:51.622Z",
-        "publishedAt": "2018-09-23T09:26:16.789Z"
+        }
       },
       "fields": {
         "title": {
@@ -1300,7 +3088,7 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/ntiequ7mc6q6/3AorRmtWOsGQ4o8gK0YWKG/bafdc9f6551a2b487fe0126158630b27/google_PNG19630.png",
+            "url": "//images.ctfassets.net/wfk1x58ndywn/3AorRmtWOsGQ4o8gK0YWKG/1ccf647b5ced9e3f5393416277b11eea/google_PNG19630.png",
             "details": {
               "size": 39228,
               "image": {
@@ -1315,18 +3103,21 @@
       }
     },
     {
+      "metadata": {
+        "tags": []
+      },
       "sys": {
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "ntiequ7mc6q6"
+            "id": "wfk1x58ndywn"
           }
         },
-        "id": "6rkOXCpyvuekYIgy6U6gGu",
+        "id": "6nf3rNaaVaUqYcoAcciSeC",
         "type": "Asset",
-        "createdAt": "2018-09-08T09:32:36.676Z",
-        "updatedAt": "2018-09-08T09:33:34.682Z",
+        "createdAt": "2020-03-08T16:44:10.681Z",
+        "updatedAt": "2021-09-08T18:55:59.453Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1334,69 +3125,72 @@
             "linkType": "Environment"
           }
         },
+        "publishedVersion": 36,
+        "publishedAt": "2021-09-08T18:55:59.453Z",
+        "firstPublishedAt": "2020-03-08T16:44:18.357Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "publishedCounter": 1,
-        "version": 15,
+        "publishedCounter": 6,
+        "version": 37,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
-        },
-        "publishedVersion": 14,
-        "firstPublishedAt": "2018-09-08T09:33:34.682Z",
-        "publishedAt": "2018-09-08T09:33:34.682Z"
+        }
       },
       "fields": {
         "title": {
-          "en-US": "Gatsby logo"
+          "en-US": "Mate Logo"
         },
         "description": {
-          "en-US": "Gatsby logo"
+          "en-US": "Mate Logo"
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/ntiequ7mc6q6/6rkOXCpyvuekYIgy6U6gGu/9369860d91a93b58c949fedfc8967703/1_t5EnAu3eSWJA0rmZ9v3xuw.png",
+            "url": "//images.ctfassets.net/wfk1x58ndywn/6nf3rNaaVaUqYcoAcciSeC/caafd8e730400f851b6cc3f29cbbb29c/Mate_Logo.png",
             "details": {
-              "size": 111702,
+              "size": 52527,
               "image": {
-                "width": 1600,
-                "height": 1600
+                "width": 946,
+                "height": 948
               }
             },
-            "fileName": "1*t5EnAu3eSWJA0rmZ9v3xuw.png",
+            "fileName": "Mate Logo.png",
             "contentType": "image/png"
           }
         }
       }
     },
     {
+      "metadata": {
+        "tags": []
+      },
       "sys": {
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "ntiequ7mc6q6"
+            "id": "wfk1x58ndywn"
           }
         },
         "id": "u3Um4zkMrAaQioyq4oSIW",
         "type": "Asset",
-        "createdAt": "2018-09-08T09:36:25.346Z",
-        "updatedAt": "2018-09-08T09:36:43.100Z",
+        "createdAt": "2020-03-08T16:44:10.696Z",
+        "updatedAt": "2021-09-08T18:55:59.732Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1404,32 +3198,32 @@
             "linkType": "Environment"
           }
         },
+        "publishedVersion": 125,
+        "publishedAt": "2021-09-08T18:55:59.732Z",
+        "firstPublishedAt": "2020-03-08T16:44:18.797Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "publishedCounter": 1,
-        "version": 14,
+        "publishedCounter": 6,
+        "version": 126,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
-        },
-        "publishedVersion": 13,
-        "firstPublishedAt": "2018-09-08T09:36:43.100Z",
-        "publishedAt": "2018-09-08T09:36:43.100Z"
+        }
       },
       "fields": {
         "title": {
@@ -1440,7 +3234,7 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/ntiequ7mc6q6/u3Um4zkMrAaQioyq4oSIW/876e172d31bbc05ab2599e77188ea545/600px-Facebook_logo__28square_29.png",
+            "url": "//images.ctfassets.net/wfk1x58ndywn/u3Um4zkMrAaQioyq4oSIW/97a1d12a11902a4467f21bd7aa71cef0/600px-Facebook_logo__28square_29.png",
             "details": {
               "size": 13209,
               "image": {
@@ -1455,18 +3249,21 @@
       }
     },
     {
+      "metadata": {
+        "tags": []
+      },
       "sys": {
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "ntiequ7mc6q6"
+            "id": "wfk1x58ndywn"
           }
         },
-        "id": "6nf3rNaaVaUqYcoAcciSeC",
+        "id": "6rkOXCpyvuekYIgy6U6gGu",
         "type": "Asset",
-        "createdAt": "2018-09-09T20:57:29.181Z",
-        "updatedAt": "2018-09-09T20:57:42.989Z",
+        "createdAt": "2020-03-08T16:44:10.971Z",
+        "updatedAt": "2021-09-08T18:56:00.043Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1474,51 +3271,343 @@
             "linkType": "Environment"
           }
         },
+        "publishedVersion": 37,
+        "publishedAt": "2021-09-08T18:56:00.043Z",
+        "firstPublishedAt": "2020-03-08T16:44:19.249Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "publishedCounter": 1,
-        "version": 11,
+        "publishedCounter": 5,
+        "version": 38,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
-        },
-        "publishedVersion": 10,
-        "firstPublishedAt": "2018-09-09T20:57:42.989Z",
-        "publishedAt": "2018-09-09T20:57:42.989Z"
+        }
       },
       "fields": {
         "title": {
-          "en-US": "Mate Logo"
+          "en-US": "Gatsby logo"
         },
         "description": {
-          "en-US": "Mate Logo"
+          "en-US": "Gatsby logo"
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/ntiequ7mc6q6/6nf3rNaaVaUqYcoAcciSeC/4433ecac61b8aa767edd9e11739bb30a/Mate_Logo.png",
+            "url": "//images.ctfassets.net/wfk1x58ndywn/6rkOXCpyvuekYIgy6U6gGu/a9914bf6078cee86d6b3b0efd1eda71c/1_t5EnAu3eSWJA0rmZ9v3xuw.png",
             "details": {
-              "size": 52527,
+              "size": 111702,
               "image": {
-                "width": 946,
-                "height": 948
+                "width": 1600,
+                "height": 1600
               }
             },
-            "fileName": "Mate Logo.png",
+            "fileName": "1*t5EnAu3eSWJA0rmZ9v3xuw.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "sFhWk9JM2pDF8FSTqmFgM",
+        "type": "Asset",
+        "createdAt": "2020-03-09T02:28:04.242Z",
+        "updatedAt": "2020-03-09T02:28:27.432Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "publishedAt": "2020-03-09T02:28:27.432Z",
+        "firstPublishedAt": "2020-03-09T02:28:27.432Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Cripto"
+        },
+        "description": {
+          "en-US": "Cripto coin info"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/wfk1x58ndywn/sFhWk9JM2pDF8FSTqmFgM/73574be7321eba54ba71863e0727183f/react-coin.png",
+            "details": {
+              "size": 72190,
+              "image": {
+                "width": 1920,
+                "height": 1752
+              }
+            },
+            "fileName": "react-coin.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "21cC1P12Ibhw2o6ltHkZo5",
+        "type": "Asset",
+        "createdAt": "2020-04-07T14:55:46.245Z",
+        "updatedAt": "2020-07-03T19:13:58.466Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 49,
+        "publishedAt": "2020-07-03T19:13:58.466Z",
+        "firstPublishedAt": "2020-04-07T14:59:39.001Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 50,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Corona Virus Map"
+        },
+        "description": {
+          "en-US": "Corona virus map"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/wfk1x58ndywn/21cC1P12Ibhw2o6ltHkZo5/36c681d80e4f54f0dcd651f71cfde2f9/2020-04-07-17-53-covid19simplemap.netlify.com.png",
+            "details": {
+              "size": 250323,
+              "image": {
+                "width": 1366,
+                "height": 625
+              }
+            },
+            "fileName": "2020-04-07-17-53-covid19simplemap.netlify.com.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "6svdYdhuMto2rpvjmsKKEH",
+        "type": "Asset",
+        "createdAt": "2020-07-03T19:15:54.670Z",
+        "updatedAt": "2020-07-03T19:17:54.026Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-07-03T19:17:54.026Z",
+        "firstPublishedAt": "2020-07-03T19:17:54.026Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Ragazzas website"
+        },
+        "description": {
+          "en-US": "Ragazzas website"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/wfk1x58ndywn/6svdYdhuMto2rpvjmsKKEH/37fbb2b001a60932f28a245b4b9286dd/2020-07-03-16-11-ragazzas.netlify.app.png",
+            "details": {
+              "size": 1660477,
+              "image": {
+                "width": 1853,
+                "height": 947
+              }
+            },
+            "fileName": "2020-07-03-16-11-ragazzas.netlify.app.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "id": "5AwZV61ZNRkvSrK4yH0cVf",
+        "type": "Asset",
+        "createdAt": "2021-09-05T00:03:37.830Z",
+        "updatedAt": "2021-09-05T00:04:09.756Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2021-09-05T00:04:09.756Z",
+        "firstPublishedAt": "2021-09-05T00:04:09.756Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "unaj"
+        },
+        "description": {
+          "en-US": "logo unaj"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/wfk1x58ndywn/5AwZV61ZNRkvSrK4yH0cVf/18b0001587d88bb4b7a0990ff5d22c8a/unaj.png",
+            "details": {
+              "size": 19425,
+              "image": {
+                "width": 490,
+                "height": 140
+              }
+            },
+            "fileName": "unaj.png",
             "contentType": "image/png"
           }
         }
@@ -1536,41 +3625,202 @@
       "optional": false,
       "sys": {
         "type": "Locale",
-        "id": "0pUiiR5cRgkeh1qLZ5imRa",
+        "id": "47YpgAwEZxveLhnzDu22sj",
         "version": 1,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "ntiequ7mc6q6"
+            "id": "wfk1x58ndywn"
           }
         },
         "environment": {
           "sys": {
             "type": "Link",
             "linkType": "Environment",
-            "id": "master"
+            "id": "master",
+            "uuid": "e475359a-15ab-4dba-b22b-584d5763f3c0"
           }
         },
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "createdAt": "2018-09-07T23:17:03Z",
+        "createdAt": "2019-08-25T11:43:50Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
+            "id": "5CXTyPMzRBDC02whZAkrxn"
           }
         },
-        "updatedAt": "2018-09-07T23:17:03Z"
+        "updatedAt": "2019-08-25T11:43:50Z"
       }
     }
   ],
-  "webhooks": [],
+  "webhooks": [
+    {
+      "name": "Netlify - Deploy a site",
+      "url": "https://api.netlify.com/build_hooks/5e6a6e5c2c63bc1b62573dd1",
+      "httpBasicUsername": null,
+      "topics": [
+        "Entry.publish",
+        "Asset.publish",
+        "Entry.unpublish",
+        "Asset.unpublish"
+      ],
+      "filters": [
+        {
+          "equals": [
+            {
+              "doc": "sys.environment.sys.id"
+            },
+            "master"
+          ]
+        }
+      ],
+      "transformation": {
+        "contentType": "application/json"
+      },
+      "sys": {
+        "type": "WebhookDefinition",
+        "id": "1uHGPnrewHU8vUdj3KNQPw",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "createdAt": "2020-03-12T17:16:53Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedAt": "2020-03-12T17:16:53Z"
+      },
+      "headers": []
+    },
+    {
+      "name": "Netlify - Deploy a site",
+      "url": "https://api.netlify.com/build_hooks/5e6ab46ee950176fd41d25dd",
+      "httpBasicUsername": null,
+      "topics": [
+        "Entry.publish",
+        "Asset.publish",
+        "Entry.unpublish",
+        "Asset.unpublish"
+      ],
+      "filters": [
+        {
+          "equals": [
+            {
+              "doc": "sys.environment.sys.id"
+            },
+            "master"
+          ]
+        }
+      ],
+      "transformation": {
+        "contentType": "application/json"
+      },
+      "sys": {
+        "type": "WebhookDefinition",
+        "id": "76D67FQcB5fLifAcnf2WXM",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "createdAt": "2020-03-12T22:15:32Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedAt": "2020-03-12T22:15:32Z"
+      },
+      "headers": []
+    },
+    {
+      "name": "Netlify - Deploy a site",
+      "url": "https://api.netlify.com/build_hooks/5e7b67708f8f0c849b966f30",
+      "httpBasicUsername": null,
+      "topics": [
+        "Entry.publish",
+        "Asset.publish",
+        "Entry.unpublish",
+        "Asset.unpublish"
+      ],
+      "filters": [
+        {
+          "equals": [
+            {
+              "doc": "sys.environment.sys.id"
+            },
+            "master"
+          ]
+        }
+      ],
+      "transformation": {
+        "contentType": "application/json"
+      },
+      "sys": {
+        "type": "WebhookDefinition",
+        "id": "02Vyd5Gh1nQmAA76Gf6rlj",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "wfk1x58ndywn"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "createdAt": "2020-03-25T14:15:30Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5CXTyPMzRBDC02whZAkrxn"
+          }
+        },
+        "updatedAt": "2020-03-25T14:15:30Z"
+      },
+      "headers": []
+    }
+  ],
   "roles": []
 }
