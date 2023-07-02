@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex } from 'rebass';
+import { Box, Flex } from 'rebass/styled-components';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,34 +14,32 @@ library.add(faEnvelope);
 const Input = styled.input`
   padding: 2%;
   margin: 2%;
-  color: ${props =>
-    props.theme.colors[props.color] || props.theme.colors.primary};} 
-  background: ${props =>
-    props.theme.colors[props.background] ||
-    props.theme.colors.backgroundDark};} 
+  color: ${(props) =>
+    props.theme.colors[props.color] || props.theme.colors.primary};
+  background: ${(props) =>
+    props.theme.colors[props.background] || props.theme.colors.backgroundDark};
   border: none;
   border-radius: 3px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 `;
 const Label = styled.label`
- 
-  color: ${props =>
-    props.theme.colors[props.color] || props.theme.colors.primary};} 
+  color: ${(props) =>
+    props.theme.colors[props.color] || props.theme.colors.primary};
   border: none;
   border-radius: 3px;
 `;
 const Textarea = styled.textarea`
-flex:1;
-padding: 2%;
-  min-height:30vh;
-  color: ${props =>
-    props.theme.colors[props.color] || props.theme.colors.primary};}
-  background: ${props =>
-    props.theme.colors[props.color] || props.theme.colors.backgroundDark};} 
+  flex: 1;
+  padding: 2%;
+  min-height: 30vh;
+  color: ${(props) =>
+    props.theme.colors[props.color] || props.theme.colors.primary};
+  background: ${(props) =>
+    props.theme.colors[props.color] || props.theme.colors.backgroundDark};
   border: none;
   border-radius: 3px;
-  resize:none;
-  overflow:auto;
+  resize: none;
+  overflow: auto;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 `;
 
@@ -50,14 +48,14 @@ const SubmitButton = styled.button`
   width: 100%;
   cursor: pointer;
   font-family: Amatic Sc, Cabin, 'Open Sans', sans-serif;
-  color: ${props => props.theme.colors.background};
-  background-color: ${props => props.theme.colors.primaryLight};
+  color: ${(props) => props.theme.colors.background};
+  background-color: ${(props) => props.theme.colors.primaryLight};
   border: none;
   border-radius: 3px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   &:hover {
-    color: ${props => props.theme.colors.primary};
-    background-color: ${props => props.theme.colors.primaryDark};
+    color: ${(props) => props.theme.colors.primary};
+    background-color: ${(props) => props.theme.colors.primaryDark};
     box-shadow: 0 40x 4px rgba(0, 0, 0, 0.2);
   }
 `;
@@ -172,7 +170,7 @@ const Background = () => (
   </div>
 );
 const Contact = () => (
-  <Section.Container id="contact" Background={Background}>
+  <Section.Container id="Contact" Background={Background}>
     <Section.Header name="Leave a message" icon="✍️" label="writing" />
 
     <CardContainer minWidth="70vw">

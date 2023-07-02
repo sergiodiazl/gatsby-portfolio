@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Image, Text, Flex, Box } from 'rebass';
-import { StaticQuery, graphql } from 'gatsby';
+import { Image, Text, Flex, Box } from 'rebass/styled-components';
+import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
@@ -53,7 +53,7 @@ const Title = styled(Text)`
   font-weight: 600;
   text-transform: uppercase;
   display: table;
-  border-bottom: ${props => props.theme.colors.primary} 5px solid;
+  border-bottom: ${(props) => props.theme.colors.primary} 5px solid;
 `;
 
 const TextContainer = styled.div`
@@ -188,42 +188,42 @@ Project.propTypes = {
   }).isRequired,
 };
 
-const Projects = () => (
-  <Section.Container id="projects" Background={Background}>
-    <Section.Header name="Projects" icon="💻" label="notebook" />
-    <StaticQuery
-      query={graphql`
-        query ProjectsQuery {
-          contentfulAbout {
-            projects {
-              id
-              name
-              description
-              projectUrl
-              repositoryUrl
-              publishedDate(formatString: "YYYY")
-              type
-              logo {
-                title
-                image: resize(width: 200, quality: 100) {
-                  src
-                }
-              }
+const Projects = () => {
+  const data = useStaticQuery(graphql`
+    query ProjectsQuery {
+      contentfulAbout {
+        projects {
+          id
+          name
+          description
+          projectUrl
+          repositoryUrl
+          publishedDate(formatString: "YYYY")
+          type
+          logo {
+            title
+            image: resize(width: 200, quality: 100) {
+              src
             }
           }
         }
-      `}
-      render={({ contentfulAbout }) => (
-        <CardContainer minWidth="350px">
-          {contentfulAbout.projects.map((p, i) => (
-            <Fade bottom delay={i * 200} key={p.id}>
-              <Project {...p} />
-            </Fade>
-          ))}
-        </CardContainer>
-      )}
-    />
-  </Section.Container>
-);
+      }
+    }
+  `);
+  const { contentfulAbout } = data;
+  return (
+    <Section.Container id="Projects" Background={Background}>
+      <Section.Header name="Projects" icon="💻" label="notebook" />
+
+      <CardContainer minWidth="350px">
+        {contentfulAbout.projects.map((p, i) => (
+          <Fade bottom delay={i * 200} key={p.id}>
+            <Project {...p} />
+          </Fade>
+        ))}
+      </CardContainer>
+    </Section.Container>
+  );
+};
 
 export default Projects;

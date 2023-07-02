@@ -1,6 +1,6 @@
 import React from 'react';
-import { Image, Flex, Heading, Text } from 'rebass';
-import { StaticQuery, graphql } from 'gatsby';
+import { Image, Flex, Heading, Text } from 'rebass/styled-components';
+import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
@@ -55,45 +55,44 @@ const ExperienceInfo = ({ company, title, logo, description }) => {
   );
 };
 
-const Education = () => (
-  <>
-    <Slide left>
-      <Heading color="primary" my={4}>
-        <LinkAnimated selected>I worked here</LinkAnimated>
-      </Heading>
-      <StaticQuery
-        query={graphql`
-          query ExperienceQuery {
-            allContentfulExperience(sort: { fields: yearStart, order: DESC }) {
-              nodes {
-                company
-                id
-                description
-                yearStart
-                yearEnd
-                title
-                ongoing
-                logo {
-                  file {
-                    url
-                  }
-                }
-              }
+const Education = () => {
+  const data = useStaticQuery(graphql`
+    query ExperienceQuery {
+      allContentfulExperience(sort: { yearStart: DESC }) {
+        nodes {
+          company
+          id
+          description
+          yearStart
+          yearEnd
+          title
+          ongoing
+          logo {
+            file {
+              url
             }
           }
-        `}
-        render={({ allContentfulExperience }) => (
-          <CardContainer minWidth="350px">
-            {allContentfulExperience.nodes.map((p, i) => (
-              <Fade bottom delay={i * 100} key={p.id}>
-                <ExperienceInfo {...p} />
-              </Fade>
-            ))}
-          </CardContainer>
-        )}
-      />
-    </Slide>
-  </>
-);
+        }
+      }
+    }
+  `);
+  const { allContentfulExperience } = data;
+  return (
+    <>
+      <Slide left>
+        <Heading color="primary" fontFamily={'inherit'} my={4}>
+          <LinkAnimated selected>I worked here</LinkAnimated>
+        </Heading>
+        <CardContainer minWidth="350px">
+          {allContentfulExperience.nodes.map((p, i) => (
+            <Fade bottom delay={i * 100} key={p.id}>
+              <ExperienceInfo {...p} />
+            </Fade>
+          ))}
+        </CardContainer>
+      </Slide>
+    </>
+  );
+};
 
 export default Education;

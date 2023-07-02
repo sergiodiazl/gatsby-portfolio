@@ -1,6 +1,6 @@
 import React from 'react';
-import { Heading, Box } from 'rebass';
-import { Link } from "gatsby";
+import { Heading, Box } from 'rebass/styled-components';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
@@ -31,7 +31,7 @@ const Background = () => (
   </div>
 );
 const StyledLink = styled(Link)`
-  color:  ${props => props.theme.colors.primaryDark};;
+  color: ${(props) => props.theme.colors.primaryDark};
 `;
 
 const NotFoundPage = () => (
@@ -46,7 +46,7 @@ const NotFoundPage = () => (
           404
         </Heading>
         <Heading color="secondary" fontSize={['2rem', '3rem', '4rem']} as="h2">
-          There isn&apos;t anything here so 
+          There isn&apos;t anything here so
           <StyledLink to="/"> Go back !</StyledLink>
         </Heading>
       </Box>

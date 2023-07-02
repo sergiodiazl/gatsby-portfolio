@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
 
 config({ ssrFadeout: true });
 
-const loadScript = src => {
+const loadScript = (src) => {
   const tag = document.createElement('script');
   tag.src = src;
   tag.defer = true;
@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
   useEffect(() => {
     loadScript('https://use.fontawesome.com/fd58d214b9.js');
   }, []);
-
+  console.log(theme);
   return (
     <main>
       <GlobalStyle />

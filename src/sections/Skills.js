@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Text, Flex } from 'rebass';
-import { StaticQuery, graphql } from 'gatsby';
+import { Text, Flex } from 'rebass/styled-components';
+import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
@@ -96,33 +96,33 @@ Skill.propTypes = {
   description: PropTypes.string.isRequired,
 };
 
-const Skills = () => (
-  <Section.Container id="Skills" Background={Background}>
-    <Section.Header name="Skills and tools" icon="🛠️" label="tools" />
-    <StaticQuery
-      query={graphql`
-        query SkillsQuery {
-          allContentfulSkill {
-            nodes {
-              id
-              faIcon
-              iconType
-              description
-            }
-          }
+const Skills = () => {
+  const data = useStaticQuery(graphql`
+    query SkillsQuery {
+      allContentfulSkill {
+        nodes {
+          id
+          faIcon
+          iconType
+          description
         }
-      `}
-      render={({ allContentfulSkill }) => (
-        <Flex flexWrap="wrap" p={3}>
-          {allContentfulSkill.nodes.map((p, i) => (
-            <Fade bottom delay={i * 100} key={p.id}>
-              <Skill {...p} />
-            </Fade>
-          ))}
-        </Flex>
-      )}
-    />
-  </Section.Container>
-);
+      }
+    }
+  `);
+  const { allContentfulSkill } = data;
+  return (
+    <Section.Container id="Skills" Background={Background}>
+      <Section.Header name="Skills and tools" icon="🛠️" label="tools" />
+
+      <Flex flexWrap="wrap" p={3}>
+        {allContentfulSkill.nodes.map((p, i) => (
+          <Fade bottom delay={i * 100} key={p.id}>
+            <Skill {...p} />
+          </Fade>
+        ))}
+      </Flex>
+    </Section.Container>
+  );
+};
 
 export default Skills;

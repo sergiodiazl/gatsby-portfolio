@@ -4,8 +4,10 @@ import { StaticQuery, graphql } from 'gatsby';
 import { withTheme } from 'styled-components';
 import PropTypes from 'prop-types';
 
-const Helmet = ({ theme = {} }) => (
-  <StaticQuery
+const Helmet = ({ theme = {} }) => {
+  {
+    /**
+ <StaticQuery
     query={graphql`
       query HelmetQuery {
         contentfulAbout {
@@ -77,8 +79,10 @@ const Helmet = ({ theme = {} }) => (
         </ReactHelmet>
       );
     }}
-  />
-);
+  /> */
+  }
+  return <ReactHelmet></ReactHelmet>;
+};
 
 Helmet.propTypes = {
   // eslint-disable-next-line

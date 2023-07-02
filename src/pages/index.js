@@ -7,14 +7,17 @@ import Skills from '../sections/Skills';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Contact from '../sections/Contact';
+import { ScrollingProvider } from 'react-scroll-section';
 const IndexPage = () => (
   <Layout>
-    <Header />
-    <Landing />
-    <About />
-    <Projects />
-    <Skills />
-    <Contact/>
+    <ScrollingProvider>
+      <Header />
+      <Landing />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </ScrollingProvider>
     <Footer />
   </Layout>
 );

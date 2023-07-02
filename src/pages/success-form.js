@@ -1,7 +1,7 @@
 import React from 'react';
-import { Heading, Box } from 'rebass';
+import { Heading, Box } from 'rebass/styled-components';
 import styled from 'styled-components';
-import { Link } from "gatsby";
+import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
@@ -31,13 +31,12 @@ const Background = () => (
   </div>
 );
 const StyledLink = styled(Link)`
-  color:  ${props => props.theme.colors.primaryDark};;
+  color: ${(props) => props.theme.colors.primaryDark};
 `;
-
 
 const SuccessFormPage = () => (
   <Layout>
-    <Section.Container id="404" minHeight="100vh" Background={Background}>
+    <Section.Container id="Success" minHeight="100vh" Background={Background}>
       <Box width={[320, 400, 600]} m="auto">
         <Heading
           color="primaryDark"
@@ -47,8 +46,8 @@ const SuccessFormPage = () => (
           Sent!
         </Heading>
         <Heading color="secondary" fontSize={['2rem', '3rem', '4rem']} as="h2">
-        I will try to reply soon!
-        <StyledLink to="/" > You can wait in the main page.</StyledLink>
+          I will try to reply soon!
+          <StyledLink to="/"> You can wait in the main page.</StyledLink>
         </Heading>
       </Box>
     </Section.Container>

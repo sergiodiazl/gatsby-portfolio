@@ -29,7 +29,7 @@ const questions = [
   {
     name: 'spaceId',
     message: 'Your Space ID',
-    validate: input =>
+    validate: (input) =>
       /^[a-z0-9]{12}$/.test(input) ||
       'Space ID must be 12 lowercase characters',
   },
@@ -49,7 +49,8 @@ inquirer
     console.log('Writing config file...');
 
     const configFilePath = path.resolve(__dirname, '..', '.env');
-    const envData = envfile.stringifySync({
+
+    const envData = envfile.stringify({
       SPACE_ID: spaceId,
       ACCESS_TOKEN: deliveryToken,
     });
@@ -69,4 +70,4 @@ inquirer
       )} to see it in action.`,
     );
   })
-  .catch(error => console.error(error));
+  .catch((error) => console.error(error));
